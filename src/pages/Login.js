@@ -20,8 +20,8 @@ const Login = () => {
     loginUser({email, password}).then(({data}) =>{
       if(data){
         //socket work
-        socket.emit('new-user')
-        //navigate to the chat
+        socket.emit("new-user");
+        // navigate to the chat
         navigate("/chat")
       }
     })
